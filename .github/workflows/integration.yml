@@ -129,9 +129,6 @@ jobs:
     container:
       # image based on `fishtownanalytics/test-container` w/ Simba ODBC Spark driver installed
       image: 828731156495.dkr.ecr.us-east-1.amazonaws.com/dbt-spark-odbc-test-container:latest
-      credentials:
-        aws_access_key_id: $AWS_ACCESS_KEY_ID_STAGING
-        aws_secret_access_key: $AWS_SECRET_ACCESS_KEY_STAGING
 
     needs: test-metadata
 
